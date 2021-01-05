@@ -1,5 +1,7 @@
 # Tree
 
+A model of tree growth
+
 -code in Fortran
 
 -Input folder contains the values of the parameters for the simulation. Modify the input files to change the values.
