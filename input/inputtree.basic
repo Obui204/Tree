@@ -1,0 +1,9 @@
+3             N_c_Max          read(unit=10,fmt="(1i5)") 
+1             init_nb_leaves   read(unit=10,fmt="(1i5)")
+0              rw               read(unit=10,fmt="(1i5)")
+1              min_chil        read(unit=10,fmt="(1i5)")
+1.00        frac_desir_down   read(unit=10,fmt="(1i5)")
+1.0         ran_posit        read(unit=10,fmt="(1i5)")
+0.0           exp_egoisme       read(unit=10,fmt="(f8.0)")
+1           exp_reward        read(unit=10,fmt="(f8.0)")
+

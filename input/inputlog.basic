@@ -1,0 +1,19 @@
+50          N_generation        read(unit=10,fmt="(1i5)")
+960            prod_leaf          read(unit=10,fmt="(1i5)")
+100             extra_cost        read(unit=nunit,fmt="(1i6)")
+0              cost_leaf          read(unit=nunit,fmt="(1i6)")
+100             cost_volum        read(unit=nunit,fmt="(1i6)")
+0            leaves_weight      read(unit=10,fmt="(f9.0)")
+1.0            volum_weight       read(unit=10,fmt="(f9.0)")
+0              rel_res_init       read(unit=10,fmt="(1i5)")
+0.01           mech_coef         read(unit=10,fmt="(f9.0)")      !
+0.0             base_rupture     read(unit=nunit,fmt="(f9.0)")   ! REMARK THE RATIO
+0.1            rupture_coef     read(unit=nunit,fmt="(f9.0)")    ! RUPTURE COEF / MECH_COEF is the true relevant parameter
+1.5             rupture_exp       read(unit=nunit,fmt="(f9.0)")  ! 
+0.5            exp_mainte         read(unit=10,fmt="(f9.0)")     !
+100.0           rel_maintenance   read(unit=10,fmt="(f9.0)") 
+10000.0      res_prod_rel     read(unit=10,fmt="(f9.0)")
+1000.0         flux_res_rel       read(unit=10,fmt="(f9.0)")
+250            N_xy             read(unit=nunit,fmt="(1i6)") 
+250            N_z              read(unit=nunit,fmt="(1i6)")
+                         

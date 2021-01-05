@@ -1,0 +1,64 @@
+0
+0
+0
+0
+0                 
+0
+5
+1
+
+!Just Mnemotechnic, look at the codes to understand the different strategies
+
+! schem(1) decides : -branch_maker (depends on vol_constr and birth position) 
+!                    -birth_position
+!	                                                                         
+! schem(2) decides : -vol_constr								            
+!	             -mainte_cal
+!                    -mech_constr_cal				
+!																	
+! schem(3) decides : -down_grow_reser (depends on vol_constr)					
+!
+! schem(4) decides : -up_grow_mainte (vol_constr and mainte_cal is inside too)
+!
+! schem(5) decides : -upper_need_cal
+!
+! schem(6) decides : -production
+!                    -debut_printemps(not implemented yet)
+!
+! schem(7) decides : -repartition
+!
+! schem(8) decides : -cut_choice
+
+(1) : 0 base no space; 1 base no space but leaves have maintenance cost; 
+      2 space random direction (using random coeff "ran_posit"); 
+      3 space using barycenter to balance the weight
+      4 apical lead
+      5 phototropism with sinus
+      6 phototropism sans
+
+(2) : 0 base no mech constr; 1 calculate mech constr based on the force moments and increase maintenance cost;
+      2 calculate mech constr based on moments but no effect on maint cost
+
+(3) : 0 base; 1 base + branch breaks if moments are too much (during flux_down)
+
+(4) : 0 base; 1 base + branch breaks if moments are too much (during flux_up)
+
+(5) : 0 base (purely local); 1 original the upper need is the sum of needs of all descendants
+
+(6) : 0 base; 1 diurnal shade/sun used with angles on equador 
+      2 same as case 1 but the light flux is not dependant on angle (skylight) 
+      3 vertical light flux only
+      4 cardinal directions + vertical light 
+
+(7) : 0 base non dissipat exp ego/reward on; 
+      1 random distribution;
+      2 symmetric non dissipatif;
+      3 base but with ponctual pertubation;
+      4 same as 0 but include mech_constr (more ressource is given for ) 
+      5 apical lead
+      6 first-born
+
+(8) : 0 dead branches are not replaced by a bud; 
+      1 dead branches replaced by a bud;
+      2 replaced by a bud at a cost;
+

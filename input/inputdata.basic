@@ -1,0 +1,18 @@
+0                   loop_choice            read(unit=10,fmt="(1i5)")
+1                   N_c_Max_inc            read(unit=10,fmt="(1i5)")
+2                   minN_c_Max             read(unit=10,fmt="(1i5)")
+2                   maxN_c_Max             read(unit=10,fmt="(1i5)")
+10                   prod_leaf_inc          read(unit=10,fmt="(1i5)")
+200                 minprod_leaf           read(unit=10,fmt="(1i5)")
+700                 maxprod_leaf           read(unit=10,fmt="(1i5)")
+50                minrel_maintenance     read(unit=10,fmt="(f9.0)")
+50                maxrel_maintenance     read(unit=10,fmt="(f9.0)")
+1                   div_maint_vol          read(unit=10,fmt="(1i5)")
+0                  mincost_vol            read(unit=nunit,fmt="(i9)")
+100                  maxcost_vol            read(unit=nunit,fmt="(i9)")
+2                   cost_vol_inc           read(unit=nunit,fmt="(1i5)")
+50                  costextra_min          read(unit=nunit,fmt="(i5)")
+50                 costextra_max          read(unit=nunit,fmt="(i5)") 
+1                   costextra_inc          read(unit=nunit,fmt="(i5)")
+
+
